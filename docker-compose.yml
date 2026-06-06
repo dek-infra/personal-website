@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: src/frontend/Dockerfile
+    container_name: devops-portfolio
+    ports:
+      - "8080:80"
+    restart: unless-stopped
